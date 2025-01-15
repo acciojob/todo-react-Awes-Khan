@@ -66,19 +66,17 @@ const Todo = () =>{
         <button onClick={addTodo}>Add Todo</button>
       </div>
       <div>
-        <table >
-        <tbody id="data">
+        <ul>
         {todos.map((todo, index)=>(
-            <tr key={index}>
-              <td>{todo}</td>
-              <td>
+            <li key={index}>
+              <p>{todo}</p>
+              <p>
                 <button onClick={()=>{deleteTodo(todo)}}>Delete</button>
-              </td>
-            </tr>
+              </p>
+            </li>
           ))
         }
-        </tbody>
-        </table>
+        </ul>
       </div>
     </div>
   );
