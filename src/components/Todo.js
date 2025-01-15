@@ -3,7 +3,7 @@ import React from "react";
 
 const Todo = () =>{
 
-  const [todos, setTodos] = React.useState(["Test1","Test2","Test3"]);
+  const [todos, setTodos] = React.useState([]);
 
   const addTodo = () =>{
     const newTodo = document.getElementById("todoName").value ;
